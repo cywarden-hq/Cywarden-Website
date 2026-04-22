@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/* ===== FONTS ===== */
+/* sets the default app font (Satoshi) using Tailwind's standard sans font token */
+@theme {
+  --font-sans: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-clash-grotesk), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  .heading-1 {
+    @apply font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-wider;
+  }
+
+  .heading-2 {
+    @apply font-heading text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight tracking-normal;
+  }
+
+  .heading-3 {
+    @apply font-heading text-xl sm:text-2xl lg:text-3xl font-semibold leading-snug tracking-normal;
+  }
+
+  .heading-4 {
+    @apply font-heading text-lg sm:text-xl lg:text-2xl font-medium leading-snug tracking-normal;
+  }
+
+  /* ===== BODY TEXT ===== */
+
+  .lead-text {
+    @apply font-sans text-base md:text-xl leading-relaxed;
+  }
+  
+  .body-lg {
+    @apply font-sans text-base md:text-lg leading-relaxed;
+  }
+  
+  .body-text {
+    @apply font-sans text-sm md:text-base leading-relaxed;
+  }
+
+  .body-sm {
+    @apply font-sans text-xs md:text-sm leading-relaxed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* OurAlliance logo strip — seamless loop, pause via .group:hover on parent */
+@keyframes alliance-logo-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.alliance-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: alliance-logo-marquee 50s linear infinite;
+}
+
+.group:hover .alliance-marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .alliance-marquee-track {
+    animation: none;
+    transform: none;
+  }
+}

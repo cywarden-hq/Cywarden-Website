@@ -19,7 +19,7 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "src/app/error.jsx", "src/app/(home)/components/OurAlliance.jsx", "src/app/(home)/components/Hero.jsx", "src/app/(home)/page.jsx", "src/app/loading.jsx", "src/components/Navbar.jsx", "src/components/Footer.tsx"  ],
   "exclude": ["node_modules"]
 }
