@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import Container from "@/components/ui/container";
 
 const headline = "Strengthen Your Security Posture Today";
 
@@ -17,8 +18,8 @@ export function SecurityPostureCta() {
         aria-hidden
       />
 
-      <div className="relative z-[1] flex w-full flex-col gap-8 sm:gap-10 lg:flex-row lg:items-end lg:gap-8 xl:gap-12">
-        <div className="relative flex flex-col justify-center items-start z-20 w-full min-w-0 shrink-0 lg:flex-1 py-10 pl-20">
+      <Container as="div" className="relative z-[1] flex w-full flex-col gap-8 sm:gap-10 lg:flex-row lg:items-end lg:gap-8 xl:gap-12">
+        <div className="relative flex flex-col justify-center items-start z-20 w-full min-w-0 shrink-0 lg:flex-1">
           <h2
             id="security-posture-cta-heading"
             className="text-balance font-heading text-[clamp(1.5rem,3.8vw,2.75rem)] font-bold leading-[1.15] tracking-tight text-white"
@@ -67,7 +68,7 @@ export function SecurityPostureCta() {
               priority={false}
             />
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
