@@ -73,15 +73,11 @@ export function FleetAgentsSection() {
             className="relative overflow-hidden bg-black py-16 text-white sm:py-20 lg:py-24"
             aria-labelledby="fleet-agents-heading"
         >
-            {/* Atmospheric gradient orbs — contained, TL + BR */}
-            <div
-                className="pointer-events-none absolute left-4 top-20 h-[min(320px,70vw)] w-[min(320px,70vw)] rounded-full bg-[#0186DC]/38 blur-[88px] sm:left-8 lg:top-28 lg:h-[380px] lg:w-[380px]"
-                aria-hidden
-            />
-            <div
-                className="pointer-events-none absolute bottom-16 right-4 h-[min(280px,65vw)] w-[min(280px,65vw)] rounded-full bg-[#740B0D]/32 blur-[96px] sm:right-8 lg:bottom-24 lg:h-[340px] lg:w-[340px]"
-                aria-hidden
-            />
+            {/* Atmospheric orbs — large, saturated; blur kept moderate so color stays vivid */}
+            <div className="pointer-events-none absolute inset-0 z-10" aria-hidden>
+                <div className="absolute -left-[28%] -top-[24%] h-[min(560px,92vw)] w-[min(560px,92vw)] rounded-full bg-[#0080FF]/55 blur-[100px] sm:-left-[22%] sm:-top-[18%] sm:h-[min(620px,88vw)] sm:w-[min(620px,88vw)] lg:h-[min(680px,70vw)] lg:w-[min(680px,70vw)]" />
+                <div className="absolute -bottom-[20%] -right-[24%] h-[min(540px,90vw)] w-[min(540px,90vw)] rounded-full bg-[#0080FF]/55 blur-[100px] sm:-bottom-[14%] sm:-right-[18%] sm:h-[min(600px,85vw)] sm:w-[min(600px,85vw)] lg:h-[min(640px,68vw)] lg:w-[min(640px,68vw)]" />
+            </div>
 
             <Container as="div" className="relative z-10 min-w-0">
                 {/*
