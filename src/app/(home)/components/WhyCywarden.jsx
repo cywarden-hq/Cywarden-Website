@@ -47,7 +47,11 @@ const eyebrowStyle = {
 };
 
 /** Figma: 0% #004CFF → 100% #00AEFF */
-const cardBorderGradient = {
+const evenCardBorderGradient = {
+  backgroundImage: "linear-gradient(90deg, #00AEFF 0%, #004CFF 100%)",
+};
+
+const oddCardBorderGradient = {
   backgroundImage: "linear-gradient(90deg, #004CFF 0%, #00AEFF 100%)",
 };
 
@@ -84,11 +88,11 @@ export function WhyCywarden() {
         </header>
 
         <div className="mt-12 grid grid-cols-1 gap-5 sm:mt-14 md:grid-cols-2 md:gap-6 lg:mt-16 lg:gap-6 xl:gap-8">
-          {pillars.map((item) => (
+          {pillars.map((item, index) => (
             <div
               key={item.title}
               className="h-full min-h-0 rounded-3xl p-px"
-              style={cardBorderGradient}
+              style={index % 2 === 0 ? evenCardBorderGradient : oddCardBorderGradient}
             >
               <article className="flex h-full min-h-0 flex-col rounded-[calc(1.5rem-1px)] bg-black px-6 py-7 text-left sm:px-8 sm:py-8 md:px-10 md:py-10">
                 <h3 className="text-balance font-heading text-xl font-bold leading-snug text-white sm:text-2xl md:text-[28px] md:leading-tight">

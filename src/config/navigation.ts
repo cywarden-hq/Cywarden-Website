@@ -27,15 +27,9 @@ export const navigation = [
     href: "/",
   },
   {
-    type: "dropdown",
+    type: "link",
     label: "Product",
-    href: "/cyforte",
-    children: [
-      {
-        label: "Cyforte.ai Platform",
-        href: "/cyforte",
-      },
-    ],
+    href: "/product",
   },
   {
     type: "mega",
@@ -68,11 +62,11 @@ export const navigation = [
     label: "Partners",
     href: "/partners",
   },
-  {
-    type: "link",
-    label: "Insights",
-    href: "/blog",
-  },
+  // {
+  //   type: "link",
+  //   label: "Insights",
+  //   href: "/blog",
+  // },
   {
     type: "mega",
     label: "Company",

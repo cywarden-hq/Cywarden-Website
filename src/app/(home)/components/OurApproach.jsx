@@ -66,7 +66,7 @@ export function OurApproach() {
       />
 
       <Container as="div" className="relative z-10 min-w-0">
-        <div className="flex min-w-0 flex-col gap-10 lg:flex-row lg:items-start lg:gap-10 xl:gap-14 2xl:gap-16">
+        <div className="flex min-w-0 flex-col lg:flex-row gap-10 lg:items-start lg:gap-10 xl:gap-14 2xl:gap-16">
           <div className="w-full min-w-0 shrink-0 lg:max-w-[min(100%,42%)] xl:max-w-[40%]">
             <p
               className="bg-clip-text font-heading text-xs font-semibold uppercase tracking-[0.2em] text-transparent sm:text-sm"
@@ -109,23 +109,15 @@ export function OurApproach() {
             </ul>
           </div>
 
-          <div className="grid w-full min-w-0 flex-1 auto-rows-fr grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:gap-6">
-            {approachCards.map((card) => (
-              <div
-                key={card.src}
-                className="relative flex w-full min-w-0 justify-center sm:justify-start"
-              >
-                <Image
-                  src={`${card.src}?v=${APPROACH_ASSETS_VERSION}`}
-                  alt={card.alt}
-                  width={CELL_ASPECT_W}
-                  height={CELL_ASPECT_H}
-                  unoptimized
-                  className="h-auto w-full max-w-full object-contain object-center"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 45vw, (max-width: 1536px) 32vw, 480px"
-                />
-              </div>
-            ))}
+          <div className="">
+            <Image
+              src="/images/home/our-approach-image-right.svg"
+              alt="Our Approach"
+              width={700}
+              height={700}
+              className="object-contain"
+              priority={false}
+            />
           </div>
         </div>
       </Container>
