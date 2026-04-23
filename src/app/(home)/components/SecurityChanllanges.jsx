@@ -150,8 +150,8 @@ export function SecurityChanllanges() {
           <div
             className={cn(
               "relative overflow-hidden rounded-[32px] border border-white/[0.08]",
-              "bg-gradient-to-b from-[#0c1a33] via-[#081426] to-[#050c18]",
-              "p-5 shadow-[0_24px_80px_rgba(0,0,0,0.45)] sm:p-8 lg:p-10",
+              "bg-gradient-to-b from-[#0C3296] to-[#010055]",
+              "p-5 sm:p-8 lg:p-10",
             )}
           >
             {/* Blue glow from bottom center inside the card */}

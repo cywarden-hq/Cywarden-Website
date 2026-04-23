@@ -109,10 +109,10 @@ export function WhyPartnerWithCywarden() {
                         <div className="relative z-10 grid grid-cols-1 gap-8 p-6 sm:gap-10 sm:p-8 md:grid-cols-2 lg:gap-10 lg:p-10 xl:p-12">
                             {pillars.map((item) => (
                                 <article key={item.title}>
-                                    <h3 className="font-heading text-lg font-bold leading-snug text-white sm:text-xl">
+                                    <h3 className="heading-3 font-semibold leading-snug text-white">
                                         {item.title}
                                     </h3>
-                                    <p className="body-text mt-3 text-pretty text-gray-300 sm:mt-4">{item.body}</p>
+                                    <p className="body-lg mt-3 text-pretty text-gray-300 sm:mt-4">{item.body}</p>
                                 </article>
                             ))}
                         </div>
