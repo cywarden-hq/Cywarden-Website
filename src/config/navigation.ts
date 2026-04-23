@@ -20,7 +20,7 @@ export type NavItem =
       groups: NavGroup[]
     }
 
-export const navigation = [
+export const navigation: NavItem[] = [
   {
     type: "link",
     label: "Home",
@@ -85,7 +85,7 @@ export const navigation = [
       },
     ],
   },
-] satisfies NavItem[]
+]
 
 export const cta = {
   label: "Get Started",
