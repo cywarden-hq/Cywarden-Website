@@ -35,7 +35,7 @@ export function RealWorldResults() {
 
             <Container as="div" className="relative z-[1]">
                 <div className="grid grid-cols-1 items-center gap-12 overflow-visible lg:grid-cols-12 lg:gap-10 xl:gap-14">
-                    <div className="flex max-w-xl flex-col lg:col-span-5 lg:max-w-none">
+                    <div className="flex max-w-xl flex-col items-center lg:col-span-5 lg:max-w-none">
                         <h2
                             id="ngsoc-real-world-heading"
                             className="font-heading text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-[clamp(2rem,3.2vw,2.75rem)]"
@@ -73,7 +73,7 @@ export function RealWorldResults() {
                     </div>
 
                     {/* Globe is not clipped by a small absolute box: shrink-wrap + overflow-visible; cards align to globe's left edge */}
-                    <div className="flex flex-col items-stretch justify-center lg:col-span-7 lg:items-end">
+                    <div className="flex flex-col lg:col-span-7">
                         {/* Globe — re-enable when asset/layout is ready
                         <Image
                             src={globeSrc}
@@ -87,7 +87,7 @@ export function RealWorldResults() {
                         />
                         */}
 
-                        <div className="mt-2 flex w-full max-w-md flex-col gap-4 self-center sm:max-w-lg lg:mt-0 lg:max-w-[23rem] lg:self-end xl:max-w-[24rem]">
+                        <div className="mx-auto mt-2 flex w-full max-w-md flex-col gap-4 sm:max-w-lg lg:mt-0 lg:max-w-[23rem] xl:max-w-[24rem]">
                             <GlassCard
                                 title="US Technology Firm"
                                 body="70% reduction in false positives through tuned detection logic and analyst validation. Mean time to detect critical incidents dropped from days to under an hour with 24×7 coverage."
