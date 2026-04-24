@@ -2,8 +2,6 @@ import Container from "@/components/ui/container";
 import { cn } from "@/lib/utils";
 import { ClipboardList, Cog, ScanSearch, Shield, ShieldAlert, Users } from "lucide-react";
 
-const copper = "#D17A48";
-
 const intro = {
     eyebrow: "The challenge",
     title: "A Fleet of Specialized AI Agents",
@@ -96,12 +94,7 @@ export function FleetAgentsSection() {
                             )}
                         >
                             <div className="relative z-10">
-                                <p
-                                    className="font-heading text-[11px] font-bold uppercase tracking-[0.28em] sm:text-xs"
-                                    style={{ color: copper }}
-                                >
-                                    {intro.eyebrow}
-                                </p>
+                                <p className="section-label">{intro.eyebrow}</p>
                                 <h2
                                     id="fleet-agents-heading"
                                     className="mt-4 text-balance font-heading text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl lg:text-[clamp(1.75rem,2.2vw,2.25rem)]"

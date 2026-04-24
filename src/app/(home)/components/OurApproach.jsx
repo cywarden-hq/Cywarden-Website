@@ -9,11 +9,6 @@ import { cn } from "@/lib/utils";
  */
 const APPROACH_ASSETS_VERSION = "2";
 
-const eyebrowStyle = {
-  backgroundImage:
-    "linear-gradient(90deg, rgb(229, 100, 4) 0%, rgb(249, 104, 14) 55%, rgb(255, 140, 100) 100%)",
-};
-
 const accentBlue = "text-[#3BA3FF]";
 
 const tags = [
@@ -68,12 +63,7 @@ export function OurApproach() {
       <Container as="div" className="relative z-10 min-w-0">
         <div className="flex min-w-0 flex-col lg:flex-row gap-10 lg:items-start lg:gap-10 xl:gap-14 2xl:gap-16">
           <div className="w-full min-w-0 shrink-0 lg:max-w-[min(100%,42%)] xl:max-w-[40%]">
-            <p
-              className="bg-clip-text font-heading text-xs font-semibold uppercase tracking-[0.2em] text-transparent sm:text-sm"
-              style={eyebrowStyle}
-            >
-              Our Approach
-            </p>
+            <p className="section-label">Our Approach</p>
 
             <h2
               id="our-approach-heading"

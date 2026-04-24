@@ -1,7 +1,6 @@
 import Container from "@/components/ui/container";
 import { cn } from "@/lib/utils";
 
-const copper = "#D17A48";
 const statStroke = "#006FFF";
 const statGlow = "rgba(0, 85, 255, 0.55)";
 
@@ -70,12 +69,7 @@ export function PlatformImpact() {
 
             <Container as="div" className="relative z-10 min-w-0">
                 <header className="mx-auto max-w-[920px] text-center">
-                    <p
-                        className="font-heading text-[11px] font-bold uppercase tracking-[0.28em] sm:text-xs"
-                        style={{ color: copper }}
-                    >
-                        {eyebrow}
-                    </p>
+                    <p className="section-label">{eyebrow}</p>
                     <h2
                         id="platform-impact-heading"
                         className="mt-4 text-balance font-heading text-3xl font-bold leading-tight tracking-tight text-white sm:mt-5 sm:text-4xl lg:text-[clamp(2rem,3vw,2.75rem)]"

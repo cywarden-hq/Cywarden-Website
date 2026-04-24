@@ -2,11 +2,6 @@ import Container from "@/components/ui/container";
 import Section from "@/components/ui/section";
 import { cn } from "@/lib/utils";
 
-const eyebrowStyle = {
-  backgroundImage:
-    "linear-gradient(90deg, rgb(255, 60, 0) 0%, rgb(254, 119, 2) 100%)",
-};
-
 const needleGradient = {
   backgroundImage:
     "linear-gradient(90deg, rgb(0, 81, 255) 0%, rgb(0, 174, 255) 100%)",
@@ -57,12 +52,7 @@ export function BusinessImpact() {
         <div className="flex min-w-0 flex-col gap-10 lg:flex-row lg:items-stretch lg:gap-0 xl:gap-2">
           {/* Left copy */}
           <div className="w-full min-w-0 shrink-0 lg:max-w-[min(100%,480px)] lg:pr-8 xl:pr-12 2xl:pr-14">
-            <p
-              className="bg-clip-text font-heading text-xs font-bold uppercase tracking-[0.12em] text-transparent sm:text-[13px]"
-              style={eyebrowStyle}
-            >
-              Business Impact
-            </p>
+            <p className="section-label">Business Impact</p>
 
             <h2
               id="business-impact-heading"

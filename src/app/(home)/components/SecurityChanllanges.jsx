@@ -7,11 +7,6 @@ import Section from "@/components/ui/section";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-const eyebrowStyle = {
-  backgroundImage:
-    "linear-gradient(90deg, rgb(229, 100, 4) 0%, rgb(249, 104, 14) 55%, rgb(255, 180, 120) 100%)",
-};
-
 const challenges = [
   {
     id: "01",
@@ -130,12 +125,7 @@ export function SecurityChanllanges() {
       />
 
       <Container as="div" className="relative z-10 min-w-0">
-        <p
-          className="bg-clip-text font-heading text-xs font-semibold uppercase tracking-[0.2em] text-transparent sm:text-sm"
-          style={eyebrowStyle}
-        >
-          The Challenge
-        </p>
+        <p className="section-label">The Challenge</p>
 
         <h2
           id="security-challenge-heading"

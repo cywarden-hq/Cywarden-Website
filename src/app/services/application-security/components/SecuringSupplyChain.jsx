@@ -61,7 +61,7 @@ export function SecuringSupplyChain() {
                 <div className="grid min-w-0 grid-cols-1 lg:grid-cols-[minmax(0,1fr)_min(34vw,400px)] lg:gap-x-0">
                     <div className="min-w-0 lg:pr-2">
                         <div className="max-w-3xl lg:max-w-none">
-                            <p className="font-heading text-sm font-semibold uppercase tracking-[0.12em] text-amber-600 sm:text-base">
+                            <p className="section-label">
                                 {eyebrow}
                             </p>
                             <h2

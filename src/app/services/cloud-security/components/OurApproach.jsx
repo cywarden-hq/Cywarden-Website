@@ -17,7 +17,7 @@ export function OurApproach() {
         >
             <Container as="div" className="flex flex-col items-center gap-12 sm:gap-14 lg:gap-20">
                 <div className="flex max-w-3xl flex-col items-center text-center">
-                    <p className="font-heading text-sm font-semibold uppercase tracking-[0.12em] text-amber-600 sm:text-base">
+                    <p className="section-label">
                         {eyebrow}
                     </p>
                     <h2

@@ -52,9 +52,7 @@ export function ComplianceFrameworks() {
             >
                 <Container as="div" className="flex flex-col items-center">
                     <header className="relative z-[2] max-w-4xl text-center">
-                        <p className="font-heading text-sm font-bold uppercase tracking-[0.18em] text-[#FF5900] sm:text-base">
-                            Frameworks
-                        </p>
+                        <p className="section-label">Frameworks</p>
                         <h2
                             id="grc-frameworks-heading"
                             className="mt-4 font-heading text-[clamp(1.65rem,4.5vw,2.35rem)] font-bold leading-[1.12] tracking-tight text-white sm:mt-5 sm:text-4xl md:text-[clamp(2rem,3.4vw,2.85rem)]"

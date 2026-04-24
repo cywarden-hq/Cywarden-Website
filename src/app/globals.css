@@ -41,6 +41,18 @@
   .body-sm {
     @apply font-sans text-xs md:text-sm leading-relaxed;
   }
+
+  /**
+   * Section label (eyebrow / overline): uppercase, Clash Grotesk, responsive size,
+   * orange gradient fill (#FF6600 → #FFAE00).
+   */
+  .section-label {
+    @apply inline-block max-w-full font-heading text-sm font-bold uppercase tracking-[0.18em] sm:text-base;
+    background-image: linear-gradient(to right, #ff6600, #ffae00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 html {

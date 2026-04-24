@@ -54,9 +54,7 @@ export function ProactiveThreatIdentification() {
         >
             <Container className="flex flex-col gap-10 sm:gap-12 lg:gap-14">
                 <header className="max-w-3xl">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#FF3C00] sm:text-sm">
-                        Our approach
-                    </p>
+                    <p className="section-label">Our approach</p>
                     <h2
                         id="proactive-threat-heading"
                         className="mt-3 font-heading text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.5rem] lg:leading-[1.15]"

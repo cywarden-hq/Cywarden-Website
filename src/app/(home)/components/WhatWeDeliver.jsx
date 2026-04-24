@@ -71,11 +71,6 @@ const deliverCards = [
   },
 ];
 
-const eyebrowStyle = {
-  backgroundImage:
-    "linear-gradient(90deg, rgb(229, 100, 4) 0%, rgb(249, 104, 14) 55%, rgb(255, 140, 100) 100%)",
-};
-
 /** Matches `SecurityChanllanges` headline accent (“Organizations”) */
 const accentBlue = "text-[#3BA3FF]";
 
@@ -90,12 +85,7 @@ export function WhatWeDeliver() {
       aria-labelledby="what-we-deliver-heading"
     >
       <Container as="div" className="min-w-0">
-        <p
-          className="bg-clip-text font-heading text-xs font-semibold uppercase tracking-[0.2em] text-transparent sm:text-sm"
-          style={eyebrowStyle}
-        >
-          {deliverEyebrow}
-        </p>
+        <p className="section-label">{deliverEyebrow}</p>
 
         <h2
           id="what-we-deliver-heading"

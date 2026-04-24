@@ -46,7 +46,7 @@ export function ValueDelivered() {
             </div>
 
             <Container as="div" className="relative z-10 flex flex-col items-center">
-                <p className="font-heading text-sm font-semibold uppercase tracking-[0.12em] text-amber-600 sm:text-base">
+                <p className="section-label">
                     {eyebrow}
                 </p>
                 <h2

@@ -29,11 +29,6 @@ const leaderTestimonials = [
   },
 ];
 
-const eyebrowStyle = {
-  backgroundImage:
-    "linear-gradient(90deg, rgb(255, 60, 0) 0%, rgb(254, 119, 2) 100%)",
-};
-
 const sectionBg = {
   backgroundImage: "url('/images/home/leaders-testimonial-bg.png')",
   backgroundSize: "cover",
@@ -72,12 +67,7 @@ export function LeadersTestimonials() {
 
       <Container as="div" className="relative z-10 min-w-0">
         <header className="mx-auto max-w-full text-center sm:max-w-[920px]">
-          <p
-            className="bg-clip-text font-heading text-xs font-bold uppercase tracking-[0.12em] text-transparent sm:text-[13px]"
-            style={eyebrowStyle}
-          >
-            {leadersEyebrow}
-          </p>
+          <p className="section-label">{leadersEyebrow}</p>
           <h2
             id="leaders-testimonials-heading"
             className="mt-3 text-balance font-heading text-3xl font-bold leading-[1.2] text-white sm:text-4xl lg:text-[clamp(1.875rem,2.4vw,2.5rem)] xl:text-[40px]"

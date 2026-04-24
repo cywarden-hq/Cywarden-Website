@@ -38,7 +38,7 @@ export function WhatWeDeliver() {
         >
             <Container as="div" className="flex flex-col items-center">
                 <header className="max-w-3xl text-center">
-                    <p className="font-heading text-sm font-bold uppercase tracking-[0.14em] text-[#FF5900] sm:text-base">
+                    <p className="section-label">
                         Value
                     </p>
                     <h2
