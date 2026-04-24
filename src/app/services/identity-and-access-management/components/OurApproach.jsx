@@ -122,7 +122,7 @@ export function OurApproach() {
             >
                 <Container as="div" className="flex flex-col items-center">
                     <header className="max-w-4xl text-center">
-                        <p className="font-heading text-sm font-bold uppercase tracking-[0.14em] text-amber-500 sm:text-base">
+                        <p className="font-heading text-sm font-bold uppercase tracking-[0.14em] text-[#FF5900] sm:text-base">
                             Our approach
                         </p>
                         <h2

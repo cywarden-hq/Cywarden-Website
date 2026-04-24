@@ -42,7 +42,7 @@ export const navigation: NavItem[] = [
           { label: "Application Security", href: "/services/application-security" },
           { label: "Threat Modeling", href: "/services/threat-modeling" },
           { label: "Identity & Access Management", href: "/services/identity-and-access-management" },
-          { label: "Governance Risk & Compliance", href: "/services/governance-risk" },
+          { label: "Governance, Risk & Compliance", href: "/services/governance-risk-and-compliance" },
           { label: "Vulnerability Management", href: "/services/vulnerability-management" },
         ],
       },
