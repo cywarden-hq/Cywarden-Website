@@ -3,3 +3,7 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# Let next/image use sharp on Linux; keep native binary out of the esbuild bundle.
+[functions]
+  external_node_modules = ["sharp"]
