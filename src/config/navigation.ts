@@ -41,7 +41,7 @@ export const navigation: NavItem[] = [
           { label: "Cloud Security", href: "/services/cloud-security" },
           { label: "Application Security", href: "/services/application-security" },
           { label: "Threat Modeling", href: "/services/threat-modeling" },
-          { label: "Identity & Access Management", href: "/services/identity-access" },
+          { label: "Identity & Access Management", href: "/services/identity-and-access-management" },
           { label: "Governance Risk & Compliance", href: "/services/governance-risk" },
           { label: "Vulnerability Management", href: "/services/vulnerability-management" },
         ],
