@@ -10,7 +10,7 @@ const headlineGradient =
 export function Hero() {
     return (
         <section
-            className="relative min-h-[min(100svh,720px)] overflow-hidden sm:min-h-[min(100svh,800px)] lg:min-h-[min(100svh,850px)]"
+            className="relative min-h-[min(100svh,720px)] overflow-hidden sm:min-h-[min(100svh,800px)] lg:min-h-[min(100svh,850px)] bg-[#000c2d]"
             aria-label="Hero"
         >
             {/* Background video */}
