@@ -25,7 +25,7 @@ const deliverCards = [
     title: "Detection",
     detailTitle: "Managed Detection & Response",
     detailBody:
-      "24/7 threat monitoring, investigation, and containment delivered by a global SOC team augmented with AI-driven analytics. We detect what others miss and respond before damage spreads.",
+      "24x7 threat monitoring, investigation, and containment delivered by a global SOC team augmented with AI-driven analytics. We detect what others miss and respond before damage spreads.",
     image: "/images/home/deliver-detection.png",
     alt: "Magnifying glass over a digital network representing threat detection",
   },

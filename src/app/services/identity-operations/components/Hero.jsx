@@ -4,7 +4,7 @@ import Container from "@/components/ui/container";
 const heroBg = "/images/services/identity-operations/hero-bg.svg";
 
 const description =
-    "24/7 identity monitoring, threat detection, and access governance - continuously protecting your most targeted attack surface: identity.";
+    "24x7 identity monitoring, threat detection, and access governance - continuously protecting your most targeted attack surface: identity.";
 
 export function Hero() {
     return (

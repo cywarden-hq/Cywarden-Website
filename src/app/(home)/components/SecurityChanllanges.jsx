@@ -14,9 +14,9 @@ const challenges = [
     subtitle: "Chronic staffing shortages leave SOCs exposed",
     detailTitle: "Talent Gaps Are Widening, Not Closing",
     detailBody:
-      "You cannot hire fast enough. The cybersecurity talent shortage means critical roles stay open for months, leaving your SOC understaffed and response times dangerously slow. Security operations require 24/7 coverage, but building and retaining a world-class team is increasingly unattainable for most organizations.",
+      "You cannot hire fast enough. The cybersecurity talent shortage means critical roles stay open for months, leaving your SOC understaffed and response times dangerously slow. Security operations require 24x7 coverage, but building and retaining a world-class team is increasingly unattainable for most organizations.",
     features: [
-      { Icon: Cog, label: "24/7 AI SOC Monitoring" },
+      { Icon: Cog, label: "24x7 AI SOC Monitoring" },
       { Icon: Activity, label: "Automated Threat\nDetection" },
       { Icon: Lock, label: "Compliance Automation" },
     ],
@@ -30,7 +30,7 @@ const challenges = [
       "SOCs are flooded with alerts—many low fidelity or duplicated across tools. Analysts spend cycles triaging false positives while high-severity activity blends into the background. Without prioritization tuned to your environment, real incidents arrive late or not at all.",
     features: [
       { Icon: Activity, label: "Automated Threat\nDetection" },
-      { Icon: Cog, label: "24/7 AI SOC Monitoring" },
+      { Icon: Cog, label: "24x7 AI SOC Monitoring" },
       { Icon: Lock, label: "Compliance Automation" },
     ],
   },
@@ -43,7 +43,7 @@ const challenges = [
       "Workloads spread across regions and providers faster than policies, logging, and identity guardrails could follow. Shadow resources, misconfigurations, and inconsistent IAM create blind spots attackers already exploit. You need continuous visibility aligned to how cloud actually ships in your org.",
     features: [
       { Icon: Lock, label: "Compliance Automation" },
-      { Icon: Cog, label: "24/7 AI SOC Monitoring" },
+      { Icon: Cog, label: "24x7 AI SOC Monitoring" },
       { Icon: Activity, label: "Automated Threat\nDetection" },
     ],
   },
@@ -57,7 +57,7 @@ const challenges = [
     features: [
       { Icon: Lock, label: "Compliance Automation" },
       { Icon: Activity, label: "Automated Threat\nDetection" },
-      { Icon: Cog, label: "24/7 AI SOC Monitoring" },
+      { Icon: Cog, label: "24x7 AI SOC Monitoring" },
     ],
   },
   {
@@ -68,7 +68,7 @@ const challenges = [
     detailBody:
       "When security metrics do not tie to revenue, resilience, and customer trust, leadership sees cost—not capability. Reporting must translate technical signal into operational and strategic outcomes so investment decisions and incident response stay aligned with what the company is trying to achieve.",
     features: [
-      { Icon: Cog, label: "24/7 AI SOC Monitoring" },
+      { Icon: Cog, label: "24x7 AI SOC Monitoring" },
       { Icon: Lock, label: "Compliance Automation" },
       { Icon: Activity, label: "Automated Threat\nDetection" },
     ],

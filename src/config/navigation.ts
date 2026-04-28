@@ -51,8 +51,8 @@ export const navigation: NavItem[] = [
         items: [
           { label: "Next-Gen SOC", href: "/services/next-generation-soc" },
           { label: "Identity Operations", href: "/services/identity-operations"},
-          { label: "Network Operations", href: "/services/network-ops" },
-          { label: "Vulnerability Operations", href: "/services/vulnerability-ops" },
+          { label: "Network Operations", href: "/services/network-operations" },
+          { label: "Vulnerability Operations", href: "/services/vulnerability-operations" },
         ],
       },
     ],
