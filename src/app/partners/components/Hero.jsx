@@ -7,7 +7,7 @@ export function Hero() {
     return (
         <section className="relative min-w-0 text-white game bg-black" aria-label="Partners hero">
             {/* Upper hero — Earth / network background */}
-            <div className="relative flex min-h-[min(100svh,820px)] flex-col items-center justify-end overflow-hidden pb-28 pt-28 sm:min-h-[min(100svh,880px)] sm:pb-36 sm:pt-32 md:pb-44 md:pt-36 lg:pt-40">
+            <div className="relative flex min-h-[min(100svh,820px)] flex-col items-center justify-end overflow-hidden pb-28 sm:min-h-[min(100svh,880px)] sm:pb-36 md:pb-44 pt-28 sm:pt-32 md:pt-36 lg:pt-40">
                 <Image
                     src="/images/partners/hero-bg.svg"
                     alt=""

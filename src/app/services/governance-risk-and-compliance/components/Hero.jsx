@@ -54,7 +54,7 @@ export function Hero() {
     return (
         <Section
             className={cn(
-                "relative min-w-0 overflow-x-clip bg-black pb-0 pt-16 text-white sm:pt-20 md:pt-28 lg:pt-32",
+                "relative min-w-0 overflow-x-clip bg-black pb-0 text-white pt-16 sm:pt-20 md:pt-28 lg:pt-32",
                 /* Base wash on black */
                 "bg-gradient-to-b from-[#14121c] via-[#0b0a0f] to-black",
             )}
