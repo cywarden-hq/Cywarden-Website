@@ -50,7 +50,7 @@ export const navigation: NavItem[] = [
         label: "Managed Security",
         items: [
           { label: "Next-Gen SOC", href: "/services/next-generation-soc" },
-          { label: "Identity Operations", href: "/services/identity-ops" },
+          { label: "Identity Operations", href: "/services/identity-operations"},
           { label: "Network Operations", href: "/services/network-ops" },
           { label: "Vulnerability Operations", href: "/services/vulnerability-ops" },
         ],
@@ -76,10 +76,7 @@ export const navigation: NavItem[] = [
         label: "Company",
         items: [
           { label: "About", href: "/about" },
-          { label: "Leadership", href: "/about#leadership" },
-          { label: "Careers", href: "/careers" },
-          { label: "Events", href: "/events" },
-          { label: "News", href: "/news" },
+          { label: "Blogs", href: "/blogs" },
           { label: "Contact", href: "/contact" },
         ],
       },

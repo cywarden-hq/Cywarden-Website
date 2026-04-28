@@ -6,7 +6,7 @@ import { ComplianceCta } from "./components/ComplianceCta";
 
 export default function GovernanceRiskAndCompliancePage() {
     return (
-        <main className="min-w-0 max-w-[100vw] overflow-x-clip">
+        <main className="min-w-0 max-w-[100vw] overflow-x-clip bg-black">
             <Hero />
             <OurApproach />
             <StructuredPathToCompliance />

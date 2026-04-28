@@ -53,34 +53,29 @@ function PillarCircle({ line1, line2, className }) {
 export function Hero() {
     return (
         <Section
-            className="relative min-w-0 overflow-x-clip bg-black pb-0 pt-16 text-white sm:pt-20 md:pt-28 lg:pt-32"
+            className={cn(
+                "relative min-w-0 overflow-x-clip bg-black pb-0 pt-16 text-white sm:pt-20 md:pt-28 lg:pt-32",
+                /* Base wash on black */
+                "bg-gradient-to-b from-[#14121c] via-[#0b0a0f] to-black",
+            )}
             aria-labelledby="grc-hero-heading"
         >
-            {/* Purple→blue glow: spans section so it can wash up toward the header */}
-            <div
-                className="pointer-events-none absolute inset-x-0 top-0 bottom-0 z-0 overflow-x-clip"
-                aria-hidden
-            >
+            {/* Corner ellipses — orange (TL) + blue (BR), FleetAgents-style placement */}
+            <div className="pointer-events-none absolute inset-0 z-[1] overflow-x-clip" aria-hidden>
                 <div
-                    className="absolute left-1/2 top-[min(4vh,1.25rem)] h-[min(95vw,56rem)] w-[min(240vw,118rem)] -translate-x-1/2 rounded-[50%] bg-gradient-to-r from-[#4D00FF] to-[#009DFF] opacity-[0.38] blur-[80px] sm:top-[min(2vh,0.75rem)] sm:opacity-[0.44] sm:blur-[110px] md:blur-[130px]"
-                    aria-hidden
+                    className={cn(
+                        "absolute -left-[26%] -top-[22%] h-[min(92vw,32rem)] w-[min(100vw,36rem)] rounded-full bg-gradient-to-br from-[#FF5100] via-[#FF6600] to-[#FFAE00] opacity-[0.38] blur-[88px]",
+                        "sm:-left-[20%] sm:-top-[16%] sm:h-[min(88vw,36rem)] sm:w-[min(94vw,42rem)] sm:opacity-[0.42] sm:blur-[108px]",
+                        "md:blur-[125px] lg:h-[min(72vw,38rem)] lg:w-[min(78vw,44rem)]",
+                    )}
                 />
                 <div
-                    className="absolute left-1/2 top-[min(14vh,5.5rem)] h-[min(110vw,64rem)] w-[min(260vw,128rem)] -translate-x-1/2 rounded-[50%] bg-gradient-to-r from-[#4D00FF] via-[#6020ff] to-[#009DFF] opacity-[0.28] blur-[100px] sm:top-[min(12vh,5rem)] sm:blur-[140px] md:blur-[170px]"
-                    aria-hidden
+                    className={cn(
+                        "absolute -bottom-[20%] -right-[24%] h-[min(88vw,30rem)] w-[min(96vw,36rem)] rounded-full bg-gradient-to-tl from-[#00B4FF] via-[#0080FF] to-[#0066DD] opacity-[0.34] blur-[88px]",
+                        "sm:-bottom-[14%] sm:-right-[18%] sm:h-[min(82vw,34rem)] sm:w-[min(90vw,40rem)] sm:opacity-[0.38] sm:blur-[108px]",
+                        "md:blur-[125px] lg:h-[min(68vw,36rem)] lg:w-[min(76vw,42rem)]",
+                    )}
                 />
-                <div
-                    className="absolute left-1/2 top-[min(26vh,10rem)] h-[min(88vw,50rem)] w-[min(220vw,108rem)] -translate-x-1/2 rounded-[50%] bg-gradient-to-r from-[#4D00FF] to-[#009DFF] opacity-[0.22] blur-[72px] sm:blur-[96px]"
-                    aria-hidden
-                />
-            </div>
-
-            {/* Black “blocker” cap — rim lower so body copy stays clear of the arc */}
-            <div
-                className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[min(64vh,36rem)] overflow-hidden sm:h-[min(68vh,40rem)] md:h-[min(72vh,44rem)]"
-                aria-hidden
-            >
-                <div className="absolute left-1/2 top-[10%] h-[min(220vw,280%)] w-[min(235vw,118rem)] -translate-x-1/2 rounded-[50%] bg-black sm:top-[8%] md:top-[6%] lg:top-[5%]" />
             </div>
 
             <Container

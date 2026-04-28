@@ -43,7 +43,7 @@ export const footerColumns: FooterLinkColumn[] = [
     title: "Managed Security",
     links: [
       { label: "Next-Gen SOC", href: "/services/nextgen-soc" },
-      { label: "Identity Operations", href: "/services/identity-ops" },
+      { label: "Identity Operations", href: "/services/identity-operations" },
       { label: "Network Operations", href: "/services/network-ops" },
       { label: "Vulnerability Operations", href: "/services/vulnerability-ops" },
     ],

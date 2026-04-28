@@ -95,6 +95,10 @@ function DesktopMegaMenu({
   item: Extract<NavItem, { type: "mega" }>;
   pathname: string;
 }) {
+  const singleGroup = item.groups.length === 1 ? item.groups[0] : null;
+  const compactMega =
+    singleGroup !== null && singleGroup.items.length <= 5;
+
   return (
     <div className="group relative hidden md:block">
       <button
@@ -108,11 +112,21 @@ function DesktopMegaMenu({
         {item.label}
         <ChevronIcon />
       </button>
-      <div className={cn(
-        "invisible absolute left-1/2 top-full z-50 w-[min(90vw,720px)] -translate-x-1/2 pt-3 opacity-0 transition-all duration-150",
-        "group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100"
-      )}>
-        <div className="rounded-2xl border border-white/10 bg-neutral-950/95 p-8 shadow-xl backdrop-blur-md">
+      <div
+        className={cn(
+          "invisible absolute left-1/2 top-full z-50 -translate-x-1/2 pt-3 opacity-0 transition-all duration-150",
+          compactMega
+            ? "w-max min-w-[13rem] max-w-[min(92vw,20rem)]"
+            : "w-[min(90vw,720px)]",
+          "group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100",
+        )}
+      >
+        <div
+          className={cn(
+            "rounded-2xl border border-white/10 bg-neutral-950/95 shadow-xl backdrop-blur-md",
+            compactMega ? "p-5" : "p-8",
+          )}
+        >
           <div
             className={cn(
               "grid gap-8",
