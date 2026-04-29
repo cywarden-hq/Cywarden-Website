@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/ui/container";
+import Section from "@/components/ui/section";
 
 const heroBg = "/images/services/next-gen-soc/hero-bg.svg";
 
@@ -8,7 +9,7 @@ const description =
 
 export function Hero() {
     return (
-        <section
+        <Section
             className="relative min-w-0 overflow-hidden bg-black text-white"
             aria-labelledby="ngsoc-hero-heading"
         >
@@ -24,7 +25,7 @@ export function Hero() {
 
                 <Container
                     as="div"
-                    className="relative z-10 flex w-full flex-1 flex-col items-start justify-center py-24 text-left sm:py-28 md:py-32 lg:py-36"
+                    className="relative z-10 flex w-full flex-1 flex-col items-start justify-center text-left"
                 >
                     <h1
                         id="ngsoc-hero-heading"
@@ -42,6 +43,6 @@ export function Hero() {
                     </p>
                 </Container>
             </div>
-        </section>
+        </Section>
     );
 }

@@ -1,7 +1,8 @@
 import Link from "next/link";
-import Container from "@/components/ui/container";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Container from "@/components/ui/container";
+import Section from "@/components/ui/section";
+import { cn } from "@/lib/utils";
 
 const headlineWordGradient =
     "linear-gradient(90deg, rgb(229, 96, 13) 0%, rgb(255, 255, 255) 55%)";
@@ -114,8 +115,8 @@ function HubConstellation() {
 
 export function Hero() {
     return (
-        <section
-            className="relative min-h-[min(100svh,780px)] overflow-hidden sm:min-h-[min(100svh,860px)] lg:min-h-[min(100svh,920px)]"
+        <Section
+            className="relative flex min-h-[min(100svh,780px)] flex-col overflow-hidden sm:min-h-[min(100svh,860px)] lg:min-h-[min(100svh,920px)]"
             aria-label="CyForte platform hero"
         >
             <Image
@@ -127,10 +128,7 @@ export function Hero() {
             />
             <div className="absolute inset-0 bg-black/30" />
 
-            <Container
-                as="div"
-                className="relative z-10 flex min-h-0 flex-col items-center pb-14 pt-28 text-center sm:pb-16 sm:pt-32 md:pb-20 md:pt-36 lg:pb-24 lg:pt-40"
-            >
+            <Container as="div" className="relative z-10 flex min-h-0 flex-1 flex-col items-center text-center">
                 <HubConstellation />
 
                 <h1 className="heading-1 mt-10 max-w-[920px] px-1 text-balance sm:mt-12 md:mt-14">
@@ -173,6 +171,6 @@ export function Hero() {
                     </Link>
                 </div>
             </Container>
-        </section>
+        </Section>
     );
 }

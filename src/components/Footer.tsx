@@ -38,7 +38,7 @@ function LinkColumn({ title, links }: { title: string; links: NavLink[] }) {
 
 export function Footer() {
   return (
-    <Section as="section" className="bg-black text-white" size="lg">
+    <Section as="section" className="bg-black text-white" size="md">
       <Container>
         {/* Top: [ brand ] | [ link cols × 3 ] — both levels are flex */}
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between pb-10">

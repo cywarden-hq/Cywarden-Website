@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/ui/container";
+import Section from "@/components/ui/section";
 
 const heroImage = "/images/services/network-operations/hero.svg";
 
@@ -8,14 +9,8 @@ const description =
 
 export function Hero() {
     return (
-        <section
-            className="min-w-0 bg-black text-white"
-            aria-labelledby="network-operations-hero-heading"
-        >
-            <Container
-                as="div"
-                className="flex flex-col items-center pb-12 pt-16 text-center sm:pb-16 sm:pt-20 md:pb-20 md:pt-24 lg:pb-24 lg:pt-28"
-            >
+        <Section className="min-w-0 bg-black text-white" aria-labelledby="network-operations-hero-heading">
+            <Container as="div" className="flex flex-col items-center text-center">
                 <h1
                     id="network-operations-hero-heading"
                     className="font-heading text-[clamp(2rem,6vw,3.75rem)] font-bold leading-[1.08] tracking-tight"
@@ -40,6 +35,6 @@ export function Hero() {
                     />
                 </div>
             </Container>
-        </section>
+        </Section>
     );
 }

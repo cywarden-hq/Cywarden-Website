@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/ui/container";
+import Section from "@/components/ui/section";
 
 const heroBg = "/images/services/cloud-security/hero.png";
 
@@ -8,7 +9,7 @@ const description =
 
 export function Hero() {
     return (
-        <section
+        <Section
             className="relative min-w-0 overflow-hidden bg-black text-white"
             aria-labelledby="cloud-security-hero-heading"
         >
@@ -25,7 +26,7 @@ export function Hero() {
 
                 <Container
                     as="div"
-                    className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center px-4 pb-10 pt-24 text-center sm:px-6 sm:pb-14 sm:pt-28 md:pt-32 lg:pt-36"
+                    className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center px-4 text-center sm:px-6"
                 >
                     {/* Slight downward shift so the block sits a little into the cloud artwork */}
                     <div className="translate-y-4 sm:translate-y-6 md:translate-y-8">
@@ -41,6 +42,6 @@ export function Hero() {
                     </div>
                 </Container>
             </div>
-        </section>
+        </Section>
     );
 }

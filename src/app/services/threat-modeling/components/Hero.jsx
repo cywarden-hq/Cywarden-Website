@@ -53,7 +53,8 @@ function ThreatCard({ label, featured }) {
 export function Hero() {
     return (
         <Section
-            className="relative min-w-0 overflow-x-clip bg-black py-16 text-white sm:py-24 md:py-28 lg:py-34"
+            size="xl"
+            className="relative min-w-0 overflow-x-clip bg-black text-white"
             aria-labelledby="threat-modeling-hero-heading"
         >
             {/* Blue wash under grid */}

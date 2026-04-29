@@ -1,0 +1,113 @@
+{
+  "filters": ["All", "Trending", "Latest Events", "News", "Blogs"],
+  "sections": [
+    {
+      "id": "trending",
+      "title": "Trending",
+      "items": [
+        {
+          "id": "trending-1",
+          "category": "Technology",
+          "title": "There is a difficult truth in our industry that deserves more candid discussion",
+          "date": "August 20, 2026",
+          "image": "/images/blogs/trending-blog-1.jpg",
+          "slug": "impact-of-technology-workplace",
+          "filterTags": ["Trending", "Blogs"],
+          "link": "https://www.linkedin.com/posts/cywarden_grc-compliance-riskmanagement-activity-7449540980510318592-vNL_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGXG_skBfVXZ2NBuCirhiZLC0K9n5Mnr0D4"
+        },
+        {
+          "id": "trending-2",
+          "category": "Technology",
+          "title": "In times of uncertainty, what matters most is standing together",
+          "date": "August 20, 2026",
+          "image": "/images/blogs/trending-blog-2.jpg",
+          "slug": "workplace-technology-trends",
+          "filterTags": ["Trending"],
+          "link": "https://www.linkedin.com/posts/cywarden_cywarden-standingtogether-middleeastregion-activity-7435692031290765312-KA5z?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGXG_skBfVXZ2NBuCirhiZLC0K9n5Mnr0D4"
+        },
+        {
+          "id": "trending-3",
+          "category": "Technology",
+          "title": "A growing B2B SaaS organisation faced a challenge common across the industry",
+          "date": "August 20, 2022",
+          "image": "/images/blogs/trending-blog-3.jpg",
+          "slug": "technology-workplace-evolution",
+          "filterTags": ["Trending", "News"],
+          "link": "https://www.linkedin.com/posts/cywarden_appsec-casestudy-devsecops-activity-7445493038883332097-1GfQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGXG_skBfVXZ2NBuCirhiZLC0K9n5Mnr0D4"
+        }
+      ]
+    },
+    {
+      "id": "press-releases",
+      "title": "Latest Press Releases",
+      "items": [
+        {
+          "id": "press-1",
+          "category": "Technology",
+          "title": "We don’t just monitor alerts - we drive security decisions and outcomes",
+          "date": "August 20, 2026",
+          "image": "/images/blogs/press-releases-blog-1.jpg",
+          "slug": "press-cywarden-platform-update",
+          "filterTags": ["Latest Events", "News"],
+          "link": "https://www.linkedin.com/posts/cywarden_aisoc-securityoperations-aiinsecurity-activity-7427803943121932288-_uDk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGXG_skBfVXZ2NBuCirhiZLC0K9n5Mnr0D4"
+        },
+        {
+          "id": "press-2",
+          "category": "Technology",
+          "title": "The most effective application security programmes are not those with the most sophisticated tools",
+          "date": "August 20, 2026",
+          "image": "/images/blogs/press-releases-blog-2.jpg",
+          "slug": "press-security-partnership",
+          "filterTags": ["Latest Events"],
+          "link": "https://www.linkedin.com/posts/cywarden_appsec-applicationsecurity-shiftleft-activity-7444403561427288065-DvDy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGXG_skBfVXZ2NBuCirhiZLC0K9n5Mnr0D4"
+        },
+        {
+          "id": "press-3",
+          "category": "Technology",
+          "title": "security leaders face a new category of risk that demands a new set of questions",
+          "date": "August 20, 2022",
+          "image": "/images/blogs/press-releases-blog-3.jpg",
+          "slug": "press-annual-report",
+          "filterTags": ["News", "Latest Events"],
+          "link": "https://www.linkedin.com/posts/cywarden_aisecurity-ciso-aigovernance-activity-7441901628451872768-djwc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGXG_skBfVXZ2NBuCirhiZLC0K9n5Mnr0D4"
+        }
+      ]
+    },
+    {
+      "id": "latest-news",
+      "title": "Latest News",
+      "items": [
+        {
+          "id": "news-1",
+          "category": "Technology",
+          "title": "Cywarden Inc.’s 24x7 Security Operations practice reflects this philosophy. Here is what that discipline looks like in practice",
+          "date": "August 20, 2026",
+          "image": "/images/blogs/latest-news-blog-1.jpg",
+          "slug": "news-threat-landscape-q3",
+          "filterTags": ["News", "Blogs"],
+          "link": "https://www.linkedin.com/posts/cywarden_securityoperations-24x7soc-managedsecurity-activity-7438231841649737728-ZhbR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGXG_skBfVXZ2NBuCirhiZLC0K9n5Mnr0D4"
+        },
+        {
+          "id": "news-2",
+          "category": "Technology",
+          "title": "We are excited to share that the Cywarden Inc. team will be at Google Cloud Next '26 in Las Vegas!",
+          "date": "August 20, 2026",
+          "image": "/images/blogs/latest-news-blog-2.jpg",
+          "slug": "news-cloud-security-adoption",
+          "filterTags": ["Blogs"],
+          "link": "https://www.linkedin.com/posts/cywarden_googlenext2026-googlecloudnext-cloudsecurity-activity-7452415820359548928-fKJ0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGXG_skBfVXZ2NBuCirhiZLC0K9n5Mnr0D4"
+        },
+        {
+          "id": "news-3",
+          "category": "Technology",
+          "title": "Your SOC analyst gets an alert: suspicious login from an unfamiliar IP. What happens next?",
+          "date": "August 20, 2022",
+          "image": "/images/blogs/latest-news-blog-3.jpg",
+          "slug": "news-compliance-roundup",
+          "filterTags": ["News"],
+          "link": "https://www.linkedin.com/posts/cyforte-ai_soc-cybersecurity-securityoperations-activity-7439775416925548544-UaXh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGXG_skBfVXZ2NBuCirhiZLC0K9n5Mnr0D4"
+        }
+      ]
+    }
+  ]
+}

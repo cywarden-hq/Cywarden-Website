@@ -53,8 +53,9 @@ function PillarCircle({ line1, line2, className }) {
 export function Hero() {
     return (
         <Section
+            size="lg"
             className={cn(
-                "relative min-w-0 overflow-x-clip bg-black pb-0 text-white pt-16 sm:pt-20 md:pt-28 lg:pt-32",
+                "relative min-w-0 overflow-x-clip bg-black text-white",
                 /* Base wash on black */
                 "bg-gradient-to-b from-[#14121c] via-[#0b0a0f] to-black",
             )}
@@ -96,7 +97,7 @@ export function Hero() {
                     </p>
                 </div>
 
-                <div className="relative z-10 mt-10 w-full max-w-5xl pb-20 sm:mt-12 sm:pb-24 md:mt-14 md:pb-28 lg:max-w-6xl lg:mt-16">
+                <div className="relative z-10 mt-10 w-full max-w-5xl sm:mt-12 md:mt-14 lg:max-w-6xl lg:mt-16 mb-20 sm:mb-24 md:mb-28">
                     <div className="flex flex-col items-center">
                         <p
                             className={cn("font-heading text-2xl font-bold tracking-wide sm:text-3xl md:text-4xl",

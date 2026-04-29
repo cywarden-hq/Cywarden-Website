@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "@/components/ui/container";
+import Section from "@/components/ui/section";
 import { cn } from "@/lib/utils";
 
 const eyebrowGradient =
@@ -9,8 +10,8 @@ const headlineGradient =
 
 export function Hero() {
     return (
-        <section
-            className="relative min-h-[min(100svh,720px)] overflow-hidden sm:min-h-[min(100svh,800px)] lg:min-h-[min(100svh,850px)] bg-[#000c2d]"
+        <Section
+            className="relative flex min-h-[min(100svh,720px)] flex-col overflow-hidden bg-[#000c2d] sm:min-h-[min(100svh,800px)] lg:min-h-[min(100svh,850px)]"
             aria-label="Hero"
         >
             {/* Background video */}
@@ -48,10 +49,7 @@ export function Hero() {
             />
 
             {/* Content */}
-            <Container
-                as="div"
-                className="relative z-10 flex min-h-0 flex-col justify-center pb-12 pt-28 sm:pb-16 sm:pt-32 md:pb-24 md:pt-40 lg:pb-28 lg:pt-44 xl:pb-32 xl:pt-48"
-            >
+            <Container as="div" className="relative z-10 flex min-h-0 flex-1 flex-col justify-center">
                 <div className="max-w-full sm:max-w-[687px]">
                     <p
                         className="bg-clip-text body-lg font-semibold text-transparent"
@@ -97,6 +95,6 @@ export function Hero() {
                     </div>
                 </div>
             </Container>
-        </section>
+        </Section>
     );
 }

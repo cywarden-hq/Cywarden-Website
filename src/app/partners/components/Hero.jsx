@@ -39,7 +39,7 @@ export function Hero() {
                         href="/contact"
                         className={cn(
                             "mt-8 inline-flex h-12 min-w-[200px] items-center justify-center rounded-[11px] px-8 font-heading text-base font-semibold text-white transition hover:brightness-110 sm:mt-10 md:h-[3.25rem]",
-                            "bg-gradient-to-r from-[#F9680E] via-[#E85A12] to-[#C62828] shadow-[0_4px_24px_rgba(249,104,14,0.35)]",
+                            "bg-gradient-to-r from-[#FF3C00] to-[#FF9900]",
                         )}
                     >
                         Become a Partner

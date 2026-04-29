@@ -1,6 +1,13 @@
 [build]
   command = "npm run build"
 
+# Anti-clickjacking — applied at the CDN for all routes (complements next.config headers).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors 'none'"
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 

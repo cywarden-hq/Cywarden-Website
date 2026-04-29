@@ -1,0 +1,100 @@
+[
+  {
+    "id": "pradeep-singh-sandhu",
+    "name": "Pradeep Singh Sandhu",
+    "role": "Chief Executive Officer",
+    "image": "/images/about/team-members/pradeep-sandhu-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/pradeepssandhu/"
+  },
+  {
+    "id": "ranjeet-singh-sekhon",
+    "name": "Ranjeet Singh Sekhon",
+    "role": "Co-Founder & COO",
+    "image": "/images/about/team-members/ranjeet-singh-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/ranjeet-sekhon/"
+  },
+  {
+    "id": "sarbjeet-johal",
+    "name": "Sarbjeet Johal",
+    "role": "Advisor & Industry Analyst",
+    "image": "/images/about/team-members/sarbjeet-johal-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/sarbjeetjohal/"
+  },
+  {
+    "id": "jeff-feldman",
+    "name": "Jeff Feldman",
+    "role": "Relationship Advisor",
+    "image": "/images/about/team-members/jeff-feldman-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/jefffeldman2/"
+  },
+  {
+    "id": "sushant-thakur",
+    "name": "Sushant Thakur",
+    "role": "Chief Executive Officer",
+    "image": "/images/about/team-members/sushant-thakur-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/sushant-thakur-link95/"
+  },
+  {
+    "id": "tania-dhamija",
+    "name": "Tania Dhamija",
+    "role": "Chief Executive Officer",
+    "image": "/images/about/team-members/tania-dhamija-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/taniadhamija/"
+  },
+  {
+    "id": "nipun-sharma",
+    "name": "Nipun Sharma",
+    "role": "Chief Executive Officer",
+    "image": "/images/about/team-members/nipun-sharma-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/nipunsharma01/"
+  },
+  {
+    "id": "deeptesh-jyoti",
+    "name": "Deeptesh Jyoti",
+    "role": "Microsoft Security Strategist",
+    "image": "/images/about/team-members/deeptesh-jyoti-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/deeptesh23-6a06a9188/"
+  },
+  {
+    "id": "amninder-singh",
+    "name": "Amninder Singh",
+    "role": "Project Manager & Scrum Master",
+    "image": "/images/about/team-members/amninder-singh-profile.jpeg",
+    "linkedinUrl": "https://www.linkedin.com/in/amninder-singh-380b9b61/"
+  },
+  {
+    "id": "soham-sharma",
+    "name": "Soham Sharma",
+    "role": "Security Operations Lead",
+    "image": "/images/about/team-members/soham-sharma-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/sohamsharma966/"
+  },
+  {
+    "id": "sham-kishan",
+    "name": "Sham Kishan",
+    "role": "Offensive Security Lead",
+    "image": "/images/about/team-members/sham-kishan-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/shamukishan/"
+  },
+  {
+    "id": "amit-kumar",
+    "name": "Amit Kumar",
+    "role": "GRC Lead",
+    "image": "/images/about/team-members/amit-kumar-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/amitkumaroo7/"
+  },
+  {
+    "id": "parv-sablok",
+    "name": "Parv Sablok",
+    "role": "AI Security Lead",
+    "image": "/images/about/team-members/parv-sablok-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/parv-sablok/"
+  },
+  {
+    "id": "sandeep-kaur",
+    "name": "Sandeep Kaur",
+    "role": "Finance Operations",
+    "image": "/images/about/team-members/sandeep-kaur-profile.webp",
+    "linkedinUrl": "https://www.linkedin.com/in/sandeep-kaur-3a4611335/"
+  }
+]

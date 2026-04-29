@@ -10,7 +10,8 @@ const description =
 export function Hero() {
     return (
         <Section
-            className="relative min-w-0 overflow-x-clip bg-black py-20 text-white sm:py-26 lg:py-34"
+            size="xl"
+            className="relative min-w-0 overflow-x-clip bg-black text-white"
             aria-labelledby="application-security-hero-heading"
         >
             <Image

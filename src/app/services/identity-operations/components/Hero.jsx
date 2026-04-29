@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/ui/container";
+import Section from "@/components/ui/section";
 
 const heroBg = "/images/services/identity-operations/hero-bg.svg";
 
@@ -8,7 +9,7 @@ const description =
 
 export function Hero() {
     return (
-        <section
+        <Section
             className="relative min-w-0 overflow-hidden bg-black text-white"
             aria-labelledby="identity-operations-hero-heading"
         >
@@ -26,7 +27,7 @@ export function Hero() {
 
                 <Container
                     as="div"
-                    className="relative z-10 flex w-full flex-1 flex-col items-start justify-center py-20 text-left sm:py-24 md:py-28 lg:py-32"
+                    className="relative z-10 flex w-full flex-1 flex-col items-start justify-center text-left"
                 >
                     <div className="max-w-[42rem]">
                         <p className="font-heading text-base font-semibold text-[#FF7700] sm:text-lg">Managed Security</p>
@@ -42,6 +43,6 @@ export function Hero() {
                     </div>
                 </Container>
             </div>
-        </section>
+        </Section>
     );
 }
