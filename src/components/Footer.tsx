@@ -47,12 +47,14 @@ export function Footer() {
               href={footerLogo.href}
               className="inline-block w-fit shrink-0"
             >
+              {/* Logo box 162×36 ≈ former h-9; both axes set so Next Image dev check passes */}
               <Image
                 src={footerLogo.src}
                 alt={footerLogo.alt}
                 width={footerLogo.width}
                 height={footerLogo.height}
-                className="h-9 w-auto"
+                className="object-contain"
+                style={{ width: 162, height: 36 }}
               />
             </Link>
 

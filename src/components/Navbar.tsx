@@ -304,7 +304,7 @@ export function Navbar() {
             alt="Cywarden"
             width={188}
             height={38}
-            className="h-[38px] w-auto max-w-[188px] object-contain"
+            className="block h-[38px] w-[188px] object-contain"
             priority
           />
         </Link>
