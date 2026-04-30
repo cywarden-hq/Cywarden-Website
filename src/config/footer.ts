@@ -14,7 +14,7 @@ export const footerLogo = {
 } as const;
 
 export const footerTagline =
-  "Empowering modern enterprises to defend, innovate, and thrive — with intelligent, AI-native cybersecurity that safeguards digital ecosystems and enables fearless growth.";
+  "Empowering modern enterprises to defend, innovate, and thrive - with intelligent, AI-native cybersecurity that safeguards digital ecosystems and enables fearless growth.";
 
 export const footerAddresses: { title: string; lines: string[] }[] = [
   {
@@ -22,10 +22,17 @@ export const footerAddresses: { title: string; lines: string[] }[] = [
     lines: ["11501 Dublin Blvd, Suite 200B", "Dublin, CA 94568"],
   },
   {
-    title: "India Delivery Center",
-    lines: ["GR Tower, Industrial Area", "Sector 75, Mohali"],
+    title: "Cywarden Global Services Private Limited",
+    lines: ["GR Square (D-254), Industrial Area", "Sector 75, Chandigarh, India"],
   },
 ];
+
+export const footerLinkedIn = {
+  href: "https://www.linkedin.com/company/cywarden/",
+  label: "Follow us on LinkedIn",
+  ariaLabel: "Cywarden on LinkedIn",
+  iconSrc: "/images/linkedin-logo.svg",
+} as const;
 
 export const footerColumns: FooterLinkColumn[] = [
   {
@@ -42,7 +49,7 @@ export const footerColumns: FooterLinkColumn[] = [
   {
     title: "Managed Security",
     links: [
-      { label: "Next-Gen SOC", href: "/services/nextgen-soc" },
+      { label: "Next-Gen SOC", href: "/services/next-generation-soc" },
       { label: "Identity Operations", href: "/services/identity-operations" },
       { label: "Network Operations", href: "/services/network-operations" },
       { label: "Vulnerability Operations", href: "/services/vulnerability-operations" },
@@ -52,17 +59,17 @@ export const footerColumns: FooterLinkColumn[] = [
     title: "Company",
     links: [
       { label: "About Us", href: "/about" },
-      { label: "How We Work", href: "/about#how-we-work" },
+      { label: "How We Work", href: "/about" },
       { label: "Partners", href: "/partners" },
-      { label: "Security Blogs", href: "/blog" },
+      { label: "Security Blogs", href: "/blogs" },
     ],
   },
 ];
 
 export const footerLegal: NavLink[] = [
-  { label: "Privacy Policy", href: "/privacy" },
-  { label: "Terms of Use", href: "/terms" },
-  { label: "Cookie Policy", href: "/cookies" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Use", href: "/terms-of-use" },
+  { label: "Cookie Policy", href: "/cookie-policy" },
 ];
 
 export const footerCopyright = {

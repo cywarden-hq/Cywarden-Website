@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "@/components/ui/container";
 
 const pillarsIcon = "/images/services/next-gen-soc/pillars-icon.svg";
+const solutionTenantsBgTop = "/images/services/next-gen-soc/solution-tenants-bg-top.svg";
 
 const pillarEntries = [
     {

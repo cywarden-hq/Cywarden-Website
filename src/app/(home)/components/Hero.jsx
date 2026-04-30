@@ -14,10 +14,10 @@ export function Hero() {
             className="relative flex min-h-[min(100svh,720px)] flex-col overflow-hidden bg-[#000c2d] sm:min-h-[min(100svh,800px)] lg:min-h-[min(100svh,850px)]"
             aria-label="Hero"
         >
-            {/* Background video */}
-            <div className="absolute inset-0">
+            {/* Background video — object-right on narrow viewports so the focal loop (right) stays in frame; center on wide screens */}
+            <div className="absolute inset-0 min-h-full min-w-full overflow-hidden">
                 <video
-                    className="absolute inset-0 h-full w-full object-cover object-center"
+                    className="absolute inset-0 h-full min-h-full w-full min-w-full object-cover object-right lg:object-center"
                     autoPlay
                     muted
                     loop

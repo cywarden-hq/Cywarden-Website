@@ -14,7 +14,7 @@ const deliverHeading = {
 };
 
 const deliverSubtext = {
-  before:
+  before: 
     "Every engagement is designed around outcomes — faster detection, ",
   highlight: "reduced risk, sustained compliance, ",
   after: "and the confidence to operate at global scale.",
@@ -85,17 +85,19 @@ export function WhatWeDeliver() {
       aria-labelledby="what-we-deliver-heading"
     >
       <Container as="div" className="min-w-0">
-        <p className="section-label">{deliverEyebrow}</p>
+        <p className="section-label text-base sm:text-lg">{deliverEyebrow}</p>
 
         <h2
           id="what-we-deliver-heading"
-          className="heading-2 mt-3 max-w-4xl text-balance font-bold text-white"
+          className={cn(
+            "heading-2 mt-3 max-w-4xl text-balance font-bold text-white",
+          )}
         >
           {deliverHeading.before}
           <span className={accentBlue}>{deliverHeading.highlight}</span>
         </h2>
 
-        <p className="body-lg mt-5 max-w-3xl text-white/70 md:mt-6">
+        <p className={cn("body-lg mt-5 max-w-3xl text-white/70 md:mt-6", "text-lg md:text-xl")}>
           {deliverSubtext.before}
           <span className={cn("font-medium", accentBlue)}>
             {deliverSubtext.highlight}
@@ -103,37 +105,47 @@ export function WhatWeDeliver() {
           {deliverSubtext.after}
         </p>
 
-        {/* Mobile / tablet: static grid (no hover strip layout) */}
-        <div className="mt-10 grid grid-cols-2 gap-[15px] sm:mt-12 md:grid-cols-3 lg:hidden lg:mt-14">
+        {/* Mobile / tablet: full copy visible (no hover); stacked for readable line length */}
+        <div className="mt-10 grid grid-cols-1 gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:hidden lg:mt-14 px-10 sm:px-0">
           {deliverCards.map((card) => (
             <article
               key={card.title}
-              className="relative aspect-[180/524] w-full overflow-hidden rounded-[30px]"
+              className="flex min-w-0 flex-col overflow-hidden rounded-[24px] border border-white/10 bg-neutral-950/80 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] sm:rounded-[28px]"
             >
-              <Image
-                src={card.image}
-                alt={card.alt}
-                fill
-                className="object-cover object-center"
-                sizes="(max-width: 1024px) 50vw, 33vw"
-              />
-              <div
-                className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-[38%] bg-gradient-to-b from-black via-black/70 to-transparent"
-                aria-hidden
-              />
-              <h3 className="absolute left-5 top-8 z-[2] font-heading text-lg font-medium leading-tight text-white sm:left-6 sm:top-9 sm:text-[18px]">
-                {card.title}
-              </h3>
+              <div className="relative aspect-[16/10] w-full shrink-0 sm:aspect-[5/3]">
+                <Image
+                  src={card.image}
+                  alt={card.alt}
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                />
+                <div
+                  className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-[55%] bg-gradient-to-b from-black/90 via-black/35 to-transparent"
+                  aria-hidden
+                />
+                <h3 className="absolute left-4 top-4 z-[2] font-heading text-xl font-medium leading-tight text-white sm:left-5 sm:top-5 sm:text-2xl">
+                  {card.title}
+                </h3>
+              </div>
+              <div className="flex min-h-0 flex-col gap-3 px-4 pb-6 pt-5 sm:gap-3 sm:px-6 sm:pb-7 sm:pt-6">
+                <h4 className="font-heading text-lg font-bold leading-snug text-white sm:text-xl">
+                  {card.detailTitle}
+                </h4>
+                <p className="text-pretty text-base leading-relaxed text-white/75 sm:text-lg">
+                  {card.detailBody}
+                </p>
+              </div>
             </article>
           ))}
         </div>
 
-        {/* Desktop: horizontal hover accordion */}
+        {/* Large screens: horizontal accordion — hover for fine pointers; click / focus for touch & keyboard */}
         <div
           className="mt-10 hidden min-h-0 w-full min-w-0 gap-2 overflow-hidden lg:mt-14 lg:flex lg:h-[min(480px,68svh)] lg:min-h-[400px] lg:items-stretch lg:gap-3 xl:h-[min(520px,70svh)] xl:min-h-[440px] xl:gap-3 2xl:h-[min(560px,72svh)]"
           onMouseLeave={() => setActiveIndex(0)}
           role="list"
-          aria-label="What we deliver — hover a card to expand"
+          aria-label="What we deliver — select or hover a card to expand"
         >
           {deliverCards.map((card, index) => {
             const expanded = index === activeIndex;
@@ -150,6 +162,7 @@ export function WhatWeDeliver() {
                     : "min-w-[3rem] flex-[0.32_1_0%] sm:min-w-[3.5rem] xl:min-w-[3.75rem]",
                 )}
                 onMouseEnter={() => setActiveIndex(index)}
+                onClick={() => setActiveIndex(index)}
                 onFocus={() => setActiveIndex(index)}
                 tabIndex={0}
                 aria-expanded={expanded}
@@ -179,8 +192,8 @@ export function WhatWeDeliver() {
                   className={cn(
                     "absolute z-[2] font-heading font-medium leading-tight text-white transition-all duration-300 ease-out",
                     expanded
-                      ? "left-5 top-7 text-lg sm:left-6 sm:top-8 sm:text-[18px]"
-                      : "left-1/2 top-6 w-max -translate-x-1/2 origin-center text-[13px] uppercase tracking-[0.18em] [writing-mode:vertical-rl] sm:top-8 sm:text-sm",
+                      ? "left-5 top-6 text-xl sm:left-6 sm:top-7 sm:text-2xl xl:text-[1.65rem]"
+                      : "left-1/2 top-6 w-max -translate-x-1/2 origin-center text-sm uppercase tracking-[0.16em] [writing-mode:vertical-rl] sm:top-8 sm:text-base",
                   )}
                 >
                   {card.title}
@@ -188,17 +201,17 @@ export function WhatWeDeliver() {
 
                 <div
                   className={cn(
-                    "absolute inset-x-0 bottom-0 z-[2] flex flex-col justify-end p-5 sm:p-6",
+                    "absolute inset-x-0 bottom-0 z-[2] flex flex-col justify-end p-5 sm:p-6 xl:p-7",
                     "transition-opacity duration-300 ease-out",
                     expanded
                       ? "translate-y-0 opacity-100 delay-75"
                       : "pointer-events-none translate-y-2 opacity-0",
                   )}
                 >
-                  <h4 className="font-heading text-base font-bold leading-snug text-white sm:text-lg">
+                  <h4 className="font-heading text-lg font-bold leading-snug text-white sm:text-xl xl:text-[1.35rem]">
                     {card.detailTitle}
                   </h4>
-                  <p className="mt-2 text-pretty font-sans text-xs leading-relaxed text-white/80 sm:text-sm xl:text-[15px]">
+                  <p className="mt-2.5 text-pretty font-sans text-sm leading-relaxed text-white/80 sm:mt-3 sm:text-base xl:mt-3.5 xl:text-lg xl:leading-relaxed">
                     {card.detailBody}
                   </p>
                 </div>

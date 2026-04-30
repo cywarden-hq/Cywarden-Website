@@ -5,7 +5,7 @@ import Section from "@/components/ui/section";
 const heroBg = "/images/services/next-gen-soc/hero-bg.svg";
 
 const description =
-    "24×7 AI-enabled SOC operations delivering enterprise-grade threat detection, incident response, and continuous security improvement backed by aggressive SLAs and certified professionals.";
+    "24x7 AI-enabled SOC operations delivering enterprise-grade threat detection, incident response, and continuous security improvement backed by aggressive SLAs and certified professionals.";
 
 export function Hero() {
     return (

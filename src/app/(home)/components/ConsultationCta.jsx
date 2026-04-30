@@ -26,21 +26,23 @@ export function ConsultationCta() {
       <Container as="div" className="min-w-0">
         <div
           className={cn(
-            "grid min-w-0 overflow-hidden rounded-[14px] border border-[#008CFF]",
+            "relative min-w-0 overflow-hidden rounded-[14px] border border-[#008CFF]",
             "shadow-[0_0_40px_rgba(0,140,255,0.12)]",
           )}
         >
-          {/* Full banner art (1155×349 in SVG) — scales with width; right graphic is inside the SVG */}
-          <img
-            src={ctaBackgroundSrc}
-            alt=""
-            width={1155}
-            height={349}
-            className="col-start-1 row-start-1 block h-auto w-full object-contain object-center"
-            decoding="async"
-          />
+          {/* Background: absolutely fills card height so short SVG aspect ratio cannot leave a gap under tall copy (md and below). */}
+          <div className="pointer-events-none absolute inset-0 min-h-full" aria-hidden>
+            <img
+              src={ctaBackgroundSrc}
+              alt=""
+              width={1155}
+              height={349}
+              className="h-full w-full object-cover object-[72%_center] sm:object-[68%_center] lg:object-[58%_center]"
+              decoding="async"
+            />
+          </div>
 
-          <div className="col-start-1 row-start-1 flex min-w-0 flex-col justify-start px-4 py-7 sm:px-6 sm:py-8 md:px-8 md:py-10 lg:flex-row lg:items-center lg:px-8 lg:py-6 xl:px-[47px] [&>*]:pointer-events-auto pointer-events-none">
+          <div className="relative z-10 flex min-w-0 flex-col justify-start px-4 py-7 sm:px-6 sm:py-8 md:px-8 md:py-10 lg:flex-row lg:items-center lg:px-8 lg:py-6 xl:px-[47px] [&>*]:pointer-events-auto pointer-events-none">
             <div className="flex min-w-0 max-w-full flex-col sm:max-w-[min(100%,610px)]">
               <h2
                 id="consultation-cta-heading"

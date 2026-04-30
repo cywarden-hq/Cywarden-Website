@@ -178,7 +178,7 @@ export function SecurityChanllanges() {
                     >
                       <span
                         className={cn(
-                          "flex size-9 shrink-0 items-center justify-center rounded-full font-sans text-[18px] font-medium leading-none",
+                          "flex size-9 shrink-0 items-center justify-center rounded-full font-sans text-xl font-medium leading-none",
                           selected
                             ? "bg-[#3D5CF5] text-white"
                             : "bg-white/10 text-white/50",
@@ -190,7 +190,7 @@ export function SecurityChanllanges() {
                       <div className="flex min-w-0 flex-1 flex-col justify-center py-2 pl-3 pr-3">
                         <p
                           className={cn(
-                            "font-sans text-[13px] font-bold leading-4 tracking-normal",
+                            "font-sans text-xl font-bold leading-4 tracking-normal",
                             selected ? "text-[#0D1B6E]" : "text-white/90",
                           )}
                         >
@@ -198,7 +198,7 @@ export function SecurityChanllanges() {
                         </p>
                         <p
                           className={cn(
-                            "mt-1 font-sans text-[11px] font-normal leading-[13px]",
+                            "mt-1 font-sans text-medium font-normal leading-normal",
                             selected ? "text-[#4A5768]" : "text-white/50",
                           )}
                         >
@@ -223,7 +223,7 @@ export function SecurityChanllanges() {
                 <h3 className="font-heading text-xl font-bold leading-snug text-[#FF7A00] sm:text-2xl">
                   {active.detailTitle}
                 </h3>
-                <p className="mt-5 max-w-prose font-sans text-sm leading-[1.7] text-white sm:text-base">
+                <p className="mt-5 max-w-prose font-sans text-medium leading-[1.7] text-white sm:text-base">
                   {active.detailBody}
                 </p>
 
@@ -239,7 +239,7 @@ export function SecurityChanllanges() {
                           strokeWidth={1.75}
                           aria-hidden
                         />
-                        <p className="whitespace-pre-line font-sans text-[11px] font-medium leading-snug text-[#0D1B6E] sm:text-xs">
+                        <p className="whitespace-pre-line font-sans text-sm font-medium leading-snug text-[#0D1B6E]">
                           {label}
                         </p>
                       </div>

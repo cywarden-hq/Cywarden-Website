@@ -9,7 +9,7 @@ const description =
 
 export function Hero() {
     return (
-        <Section className="min-w-0 bg-black text-white" aria-labelledby="network-operations-hero-heading">
+        <Section size="xl" className="min-w-0 bg-black text-white" aria-labelledby="network-operations-hero-heading">
             <Container as="div" className="flex flex-col items-center text-center">
                 <h1
                     id="network-operations-hero-heading"

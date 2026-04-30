@@ -1,9 +1,9 @@
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Container from "@/components/ui/container";
 
-// const globeSrc = "/images/services/next-gen-soc/globe.svg";
+const globeSrc = "/images/services/next-gen-soc/globe.svg";
 
 const glassCardBase =
     "rounded-2xl border border-white/20 bg-white/[0.08] p-5 shadow-sm backdrop-blur-md sm:p-6 sm:rounded-[1.25rem]";
@@ -33,7 +33,18 @@ export function RealWorldResults() {
                 aria-hidden
             />
 
-            <Container as="div" className="relative z-[1]">
+            <Image
+                src={globeSrc}
+                alt=""
+                width={1000}
+                height={1000}
+                className="z-[0] absolute right-0 top-0 h-full w-full select-none object-contain object-right drop-shadow-[0_0_70px_rgba(0,72,255,0.38)] lg:drop-shadow-[0_0_90px_rgba(0,72,255,0.42)]"
+                // sizes="100vw"
+                priority={false}
+                unoptimized
+            />
+
+            <Container as="div" className="relative z-[10]">
                 <div className="grid grid-cols-1 items-center gap-12 overflow-visible lg:grid-cols-12 lg:gap-10 xl:gap-14">
                     <div className="flex max-w-xl flex-col items-center lg:col-span-5 lg:max-w-none">
                         <h2
@@ -72,32 +83,20 @@ export function RealWorldResults() {
                         </div>
                     </div>
 
-                    {/* Globe is not clipped by a small absolute box: shrink-wrap + overflow-visible; cards align to globe's left edge */}
-                    <div className="flex flex-col lg:col-span-7">
-                        {/* Globe — re-enable when asset/layout is ready
-                        <Image
-                            src={globeSrc}
-                            alt=""
-                            width={1003}
-                            height={1007}
-                            className="h-auto w-full max-w-[min(92vw,420px)] select-none object-contain sm:max-w-[460px] lg:max-w-[min(520px,40vw)] xl:max-w-[580px]"
-                            sizes="(max-width: 1024px) 92vw, 40vw"
-                            priority={false}
-                            unoptimized
-                        />
-                        */}
-
-                        <div className="mx-auto mt-2 flex w-full max-w-md flex-col gap-4 sm:max-w-lg lg:mt-0 lg:max-w-[23rem] xl:max-w-[24rem]">
-                            <GlassCard
-                                title="US Technology Firm"
-                                body="70% reduction in false positives through tuned detection logic and analyst validation. Mean time to detect critical incidents dropped from days to under an hour with 24×7 coverage."
-                                dotClassName="bg-[#0066FF]"
-                            />
-                            <GlassCard
-                                title="Cloud-Native Video Platform"
-                                body="30% reduction in production risk after embedding security reviews in CI/CD and runtime monitoring. Shorter release cycles with continuous control evidence for audits."
-                                dotClassName="bg-white"
-                            />
+                    <div className="relative z-[2] w-full lg:col-span-7">
+                        <div className="mt-2 flex justify-center lg:mt-0">
+                            <div className="flex w-full max-w-md min-w-0 flex-col gap-4 sm:max-w-lg lg:max-w-[23rem] xl:max-w-[24rem]">
+                                <GlassCard
+                                    title="US Technology Firm"
+                                    body="70% reduction in false positives through tuned detection logic and analyst validation. Mean time to detect critical incidents dropped from days to under an hour with 24×7 coverage."
+                                    dotClassName="bg-[#0066FF]"
+                                />
+                                <GlassCard
+                                    title="Cloud-Native Video Platform"
+                                    body="30% reduction in production risk after embedding security reviews in CI/CD and runtime monitoring. Shorter release cycles with continuous control evidence for audits."
+                                    dotClassName="bg-white"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

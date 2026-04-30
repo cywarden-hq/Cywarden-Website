@@ -53,7 +53,7 @@ function PillarCircle({ line1, line2, className }) {
 export function Hero() {
     return (
         <Section
-            size="lg"
+            size="xl"
             className={cn(
                 "relative min-w-0 overflow-x-clip bg-black text-white",
                 /* Base wash on black */

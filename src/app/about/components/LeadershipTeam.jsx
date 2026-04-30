@@ -38,7 +38,7 @@ function LeadershipCard({ member }) {
                 </div>
             </div>
 
-            <div className="relative flex flex-col items-center rounded-b-2xl bg-white px-2 pb-6 pt-0.5 text-center sm:rounded-b-[1.35rem] sm:px-3 sm:pb-7 sm:pt-1">
+            <div className="relative flex flex-col items-center rounded-b-2xl bg-white px-2 pb-1 pt-0.5 text-center sm:rounded-b-[1.35rem] sm:px-3 sm:pt-1">
                 <p className="max-w-[12rem] font-heading text-base font-semibold leading-snug text-black sm:text-lg">
                     {member.role}
                 </p>

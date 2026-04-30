@@ -2,8 +2,10 @@
 
 import Container from "@/components/ui/container";
 import Section from "@/components/ui/section";
+import { useRouter } from "next/navigation";
 
 export function NewsletterSubscribe() {
+    const router = useRouter();
     return (
         <Section className="min-w-0 bg-black text-white" aria-labelledby="blogs-newsletter-heading">
             <Container as="div" className="flex w-full flex-col items-center px-4 text-center sm:px-6">
@@ -31,6 +33,7 @@ export function NewsletterSubscribe() {
                     className="mt-8 flex w-full max-w-lg overflow-hidden rounded-full shadow-[0_4px_24px_rgba(0,141,255,0.12)] sm:mt-10"
                     onSubmit={(e) => {
                         e.preventDefault();
+                        router.push('/contact');
                     }}
                 >
                     <label htmlFor="blogs-newsletter-email" className="sr-only">

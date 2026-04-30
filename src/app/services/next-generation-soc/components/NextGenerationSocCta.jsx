@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Container from "@/components/ui/container";
 import { cn } from "@/lib/utils";
+import Section from "@/components/ui/section";
 
 const headline = "Know What's Happening in Your Environment Before Attackers Do";
 
@@ -10,8 +11,9 @@ const subcopy =
 
 export function NextGenerationSocCta() {
     return (
-        <section
-            className="relative isolate min-w-0 overflow-x-clip py-16 text-center text-white sm:py-20 md:py-24 lg:py-28 bg-gradient-to-r from-[#002BFF] to-[#008CFF]"
+        <Section
+            size="sm"
+            className="relative isolate min-w-0 overflow-x-clip text-center text-white bg-gradient-to-r from-[#002BFF] to-[#008CFF]"
             aria-labelledby="ngsoc-cta-heading"
         >
             <Container as="div" className="relative z-[1] flex flex-col items-center px-4 sm:px-6">
@@ -35,6 +37,6 @@ export function NextGenerationSocCta() {
                     <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
                 </Link>
             </Container>
-        </section>
+        </Section>
     );
 }

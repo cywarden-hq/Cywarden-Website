@@ -6,6 +6,7 @@ import {
   footerColumns,
   footerCopyright,
   footerLegal,
+  footerLinkedIn,
   footerLogo,
   footerTagline,
 } from "@/config/footer";
@@ -41,7 +42,7 @@ export function Footer() {
     <Section as="section" className="bg-black text-white" size="md">
       <Container>
         {/* Top: [ brand ] | [ link cols × 3 ] — both levels are flex */}
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between pb-10">
+        <div className="flex flex-col gap-10 lg:gap-20 lg:flex-row lg:items-start lg:justify-between pb-10">
           <div className="flex min-w-0 flex-col gap-8">
             <Link
               href={footerLogo.href}
@@ -85,6 +86,28 @@ export function Footer() {
               />
             ))}
           </div>
+        </div>
+      </Container>
+
+      <Container>
+        <div className="flex justify-end pb-8 pt-2 sm:pb-10 sm:pt-4">
+          <Link
+            href={footerLinkedIn.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 text-white/90 transition hover:text-white"
+            aria-label={footerLinkedIn.ariaLabel}
+          >
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15 ring-1 ring-white/25 transition hover:bg-white/25">
+              <Image
+                src={footerLinkedIn.iconSrc}
+                alt=""
+                width={22}
+                height={22}
+              />
+            </span>
+            <span className="body-text font-medium">{footerLinkedIn.label}</span>
+          </Link>
         </div>
       </Container>
 
